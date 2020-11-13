@@ -1,0 +1,88 @@
+{
+  "id": "3b61c5b0-64ad-412e-bd9e-d0e4d3fc12ed",
+  "version": "2.0",
+  "name": "batman",
+  "url": "http://localhost:3000",
+  "tests": [{
+    "id": "f4a7a1df-9710-422e-8afc-3e02860f11b1",
+    "name": "Batman sin cambio de color ",
+    "commands": [{
+      "id": "8c9e9eb2-7874-47d9-887d-cf1364bfd036",
+      "comment": "",
+      "command": "open",
+      "target": "/shows",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "139abe82-f371-4909-bd06-2702a9268a64",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "844x606",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e61169a1-8e71-4a30-97b0-7d04d7e47a0c",
+      "comment": "",
+      "command": "click",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.validate", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4fb2e793-fad8-4434-9031-e2c8beb98443",
+      "comment": "",
+      "command": "type",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.validate", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "batman"
+    }, {
+      "id": "03afbd20-2b18-4f92-a622-462523cdac52",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5390d4f9-2b36-4068-99d0-69e27573e549",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,99)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f1725059-60ac-4ed7-9e75-c9b63e37ce28",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(@href, '/shows')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e527b5a1-9ff3-437e-adb0-1375265ec76e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f4a7a1df-9710-422e-8afc-3e02860f11b1"]
+  }],
+  "urls": ["http://localhost:3000/"],
+  "plugins": []
+}
